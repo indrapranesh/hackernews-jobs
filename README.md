@@ -66,3 +66,4 @@ The app should now be running at [http://localhost:3000](http://localhost:3000).
 For any inquiries or issues, please contact [indrapranesh2111@gmail.com](mailto:indrapranesh2111@gmail.com).
 
 Enjoy using the Hacker Jobs app and happy job hunting! 🚀
+
