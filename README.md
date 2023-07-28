@@ -1,35 +1,68 @@
-# Salient
+# Hacker Jobs App with TiDB
 
-Salient is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Hacker Jobs is a Next.js web application that fetches and analyzes jobs from Hacker News. The app utilizes TiDB as the database to store job listings and Metabase for analytics and data visualization.
 
-## Getting started
+## Features
 
-To get started with this template, first install the npm dependencies:
+- Fetches job listings from Hacker News API.
+- Stores job data in TiDB for efficient retrieval and analysis.
+- Provides a user-friendly interface to browse and search for jobs.
+- Utilizes Metabase for detailed analytics and data visualization.
 
-```bash
+## Installation
+
+Before running the Hacker Jobs app, make sure you have the following prerequisites installed on your system:
+
+- Node.js
+- TiDB
+- Metabase
+
+Follow these steps to set up and run the app:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/hacker-jobs.git
+cd hacker-jobs
+```
+
+git clone https://github.com/your-username/hacker-jobs.git
+cd hacker-jobs
+
+2. Install dependencies:
+
 npm install
-```
 
-Next, run the development server:
 
-```bash
+3. Set up TiDB:
+
+   - Create the necessary database and tables in TiDB to store job data.
+
+4. Set up Metabase:
+
+   - Install and configure Metabase to connect to the TiDB database.
+
+5. Run the development server:
+
 npm run dev
-```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+The app should now be running at [http://localhost:3000](http://localhost:3000).
 
-## Customizing
+## Usage
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+- Open the Hacker Jobs app in your web browser.
+- Browse through the list of job listings fetched from Hacker News.
+- Use the search functionality to find specific job titles or keywords.
+- Explore detailed analytics and data visualizations using Metabase.
 
-## License
+## Acknowledgments
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+- The Hacker News API for providing job data.
+- TiDB for its powerful and scalable database solution.
+- Metabase for enabling detailed analytics and data visualization.
 
-## Learn more
+## Contact
 
-To learn more about the technologies used in this site template, see the following resources:
+For any inquiries or issues, please contact [indrapranesh2111@gmail.com](mailto:indrapranesh2111@gmail.com).
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+Enjoy using the Hacker Jobs app and happy job hunting! 🚀

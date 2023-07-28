@@ -12,7 +12,7 @@ export default function Home() {
         <title>Hacker Jobs</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Unlock a world of tech job opportunities with `Hacker News Jobs.` Explore curated listings from the dynamic Hacker News community and take your career to new heights!"
         />
       </Head>
       <Hero />
