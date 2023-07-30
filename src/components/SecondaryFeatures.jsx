@@ -4,9 +4,6 @@ import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
@@ -14,7 +11,6 @@ const features = [
     summary: 'Stay ahead of the curve with market trends and demand for tech skills',
     description:
       'Our analytics provide you with valuable information on job trends, salary ranges, and emerging technologies, giving you a clear understanding of the job market landscape.',
-    image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
       return (
@@ -49,7 +45,6 @@ const features = [
       'Discover a world of exciting tech opportunities with curated job listings.',
     description:
       'Browse through curated job postings from the vibrant and innovative Hacker News community, ensuring you never miss out on the latest tech openings.',
-    image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
         <>
@@ -77,7 +72,6 @@ const features = [
       'Discover the most innovative and sought-after tech companies',
     description:
       'Explore opportunities from industry-leading tech giants to cutting-edge startups.',
-    image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
         <>
@@ -136,14 +130,6 @@ function FeaturesMobile() {
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image
-                className="w-full"
-                src={feature.image}
-                alt=""
-                sizes="52.75rem"
-              />
-            </div>
           </div>
         </div>
       ))}
