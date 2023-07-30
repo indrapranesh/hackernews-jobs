@@ -32,7 +32,7 @@ export default function Jobs() {
   const getJobs = (query, limit, offset) => {
     axios
       .get(
-        `https://yosbaqwvri.execute-api.us-east-1.amazonaws.com/dev/jobs?q=${query}&limit=${limit}&offset=${offset}`
+        `https://00gb38rlgj.execute-api.us-east-1.amazonaws.com/dev/jobs?q=${query}&limit=${limit}&offset=${offset}`
       )
       .then((response) => {
         setJobs(response.data.data)
