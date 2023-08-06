@@ -21,12 +21,16 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Coming Soon
+            Introducing HackerX
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-          Exciting things are coming! Our upcoming feature to find curated jobs based on your resume, is currently under development. 
-          Get ready to effortlessly discover curated job listings tailored to your skills and experience by simply uploading your resume.
+          Discover your dream tech job with our personalized handpicked job newsletter! Get a curated selection of top tech opportunities delivered to your inbox, making job hunting smarter and more efficient.
           </p>
+          <div className='mt-10'>
+            <Button href="/express" className="bg-white hover:bg-white">
+              <span className='text-black'>Join HackerX </span>
+            </Button>
+          </div>
         </div>
       </Container>
     </section>

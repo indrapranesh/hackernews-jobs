@@ -45,7 +45,7 @@ export function PrimaryFeatures() {
           </h2>
           <div className='mt-10'>
             <Button href="/express" className="bg-white hover:bg-white">
-              <span className='text-black'>Subscribe to Express </span>
+              <span className='text-black'>Subscribe to HackerX </span>
             </Button>
           </div>
         </div>
