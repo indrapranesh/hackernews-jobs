@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-features.jpg'
+import { Button } from './Button'
 
 export function PrimaryFeatures() {
   let [tabOrientation, setTabOrientation] = useState('horizontal')
@@ -39,11 +40,14 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to find a new job.
+            Discover personalized job opportunities with our tailored newsletter
+            service - Hacker News Express
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-          Unlock the future of your tech career with Hacker Jobs as we develop cutting-edge features to elevate your job search experience.
-          </p>
+          <div className='mt-10'>
+            <Button href="/express" className="bg-white hover:bg-white">
+              <span className='text-black'>Subscribe to Express </span>
+            </Button>
+          </div>
         </div>
       </Container>
     </section>
