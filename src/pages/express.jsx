@@ -109,11 +109,11 @@ export default function Express() {
       console.log(metaDataResp.data)
       let metaData = metaDataResp.data.data
       setFormDetails({
-        company: metaData.company,
-        experience: metaData.experience,
-        fullName: metaData.fullName,
-        role: metaData.role,
-        techStacks: metaData.techStacks,
+        company: metaData?.company || '',
+        experience: metaData?.experience,
+        fullName: metaData?.fullName || '',
+        role: metaData?.role || '',
+        techStacks: metaData?.techStacks || [],
       })
       setFileUploading(false)
       updateSteps('Upload your Resume', 'Review your details')
@@ -334,7 +334,7 @@ export default function Express() {
                             <div class="mt-2">
                               <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                                 <input
-                                  value={formDetails.fullName}
+                                  value={formDetails?.fullName}
                                   onChange={(e) =>
                                     setFormDetails({
                                         ...formDetails,
@@ -362,7 +362,7 @@ export default function Express() {
                             <div class="mt-2">
                               <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                                 <input
-                                  value={formDetails.experience}
+                                  value={formDetails?.experience}
                                   onChange={(e) =>
                                     setFormDetails({
                                         ...formDetails,
@@ -390,7 +390,7 @@ export default function Express() {
                             </label>
                             <div class="mt-2">
                               <input
-                                value={formDetails.company}
+                                value={formDetails?.company}
                                 onChange={(e) =>
                                   setFormDetails({
                                     ...formDetails,
@@ -415,7 +415,7 @@ export default function Express() {
                             </label>
                             <div class="mt-2">
                               <input
-                                value={formDetails.role}
+                                value={formDetails?.role}
                                 onChange={(e) =>
                                   setFormDetails({
                                     ...formDetails,
@@ -465,7 +465,7 @@ export default function Express() {
                           </label>
                           <Stack className="pt-3" direction="row" spacing={1}>
                             { 
-                                technologies.filter(technolgy => !formDetails.techStacks.includes(technolgy))
+                                technologies.filter(technolgy => !formDetails?.techStacks?.includes(technolgy))
                                 .map((techStack, index) => (
                               <>
                                 <Chip
