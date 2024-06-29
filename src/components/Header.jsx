@@ -5,7 +5,6 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
-import TidbLogo from '@/images/logos/tidb.svg'
 import Image from 'next/image'
 
 function MobileNavLink({ href, children }) {
@@ -98,10 +97,6 @@ export function Header() {
             <Link href="/" aria-label="Home">
               <Logo className="h-10 w-auto" />
             </Link>
-          </div>
-          <div className="flex items-center cursor-pointer" onClick={() => window.open("https://docs.pingcap.com/tidb/dev/overview")}>
-              <span className='font-xs'>Powered by</span>
-              <span className='pl-3'><Image height={30} src={TidbLogo} alt='tidb logo' /></span>
           </div>
         </nav>
       </Container>

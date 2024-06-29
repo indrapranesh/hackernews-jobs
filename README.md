@@ -1,11 +1,10 @@
-# Hacker Jobs App with TiDB
+# Hacker Jobs App
 
 Hacker Jobs is a Next.js web application that fetches and analyzes jobs from Hacker News. The app utilizes TiDB as the database to store job listings and Metabase for analytics and data visualization.
 
 ## Features
 
 - Fetches job listings from Hacker News API.
-- Stores job data in TiDB for efficient retrieval and analysis.
 - Provides a user-friendly interface to browse and search for jobs.
 - Utilizes Metabase for detailed analytics and data visualization.
 
@@ -14,8 +13,6 @@ Hacker Jobs is a Next.js web application that fetches and analyzes jobs from Hac
 Before running the Hacker Jobs app, make sure you have the following prerequisites installed on your system:
 
 - Node.js
-- TiDB
-- Metabase
 
 Follow these steps to set up and run the app:
 
@@ -33,16 +30,7 @@ cd hacker-jobs
 
 npm install
 
-
-3. Set up TiDB:
-
-   - Create the necessary database and tables in TiDB to store job data.
-
-4. Set up Metabase:
-
-   - Install and configure Metabase to connect to the TiDB database.
-
-5. Run the development server:
+3. Run the development server:
 
 npm run dev
 
@@ -58,7 +46,6 @@ The app should now be running at [http://localhost:3000](http://localhost:3000).
 ## Acknowledgments
 
 - The Hacker News API for providing job data.
-- TiDB for its powerful and scalable database solution.
 - Metabase for enabling detailed analytics and data visualization.
 
 ## Contact
